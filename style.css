@@ -388,6 +388,11 @@ nav.show div.icon-close {
   margin-bottom: 0;
 }
 
+.albuns.grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 #albuns img {
   width: 10rem;
   height: 10rem;
@@ -398,23 +403,13 @@ nav.show div.icon-close {
 #albuns .albun { 
   max-width: 250px;
 }
-
-.swiper-slide {
-  height: auto;
-  padding: 0.5rem 0.5rem;
+.albuns {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-.swiper-wrapper {
-  margin-left: 5rem;
-}
-
-.swiper-pagination-bullet {
-  width: 0.25rem;
-  height: 0.25rem;
-}
-
-.swiper-pagination-bullet-active {
-  background: var(--base-color);
+.albuns {
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
 
 footer {
@@ -539,6 +534,14 @@ footer .social a:hover {
     padding-right: 3rem;
   }
 
+  .albuns {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .albun {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
   #contact .container {
     grid-auto-flow: column;
     align-items: center;
@@ -573,6 +576,11 @@ footer .social a:hover {
 
   .cards {
     flex: 1 0 0 10%;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .albuns {
+    flex:1 0 0 10%;
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
