@@ -383,6 +383,7 @@ nav.show div.icon-close {
 }
 
 #albuns header {
+  text-align: center;
   margin-left: 1rem;
   margin-right: 1rem;
   margin-bottom: 0;
@@ -391,6 +392,13 @@ nav.show div.icon-close {
 .albuns.grid {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
+}
+#albuns table{
+  text-align: center;
+  margin-left: 20rem;
+  position: relative;
+  
 }
 
 #albuns img {
@@ -402,6 +410,7 @@ nav.show div.icon-close {
 
 #albuns .albun { 
   max-width: 250px;
+  padding: 1.5rem;
 }
 .albuns {
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -534,13 +543,18 @@ footer .social a:hover {
     padding-right: 3rem;
   }
 
-  .albuns {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+  .albuns .grid{
+    display:inline-flexbox;  
+    
   }
 
   .albun {
     padding-left: 3rem;
     padding-right: 3rem;
+  }
+
+  table {
+    overflow-x:auto;    
   }
   #contact .container {
     grid-auto-flow: column;
@@ -579,8 +593,37 @@ footer .social a:hover {
     grid-template-columns: 1fr 1fr 1fr;
   }
 
-  .albuns {
-    flex:1 0 0 10%;
-    grid-template-columns: 1fr 1fr 1fr;
+  
+  table, tr, td {
+    display: block;
   }
+
+  td{
+    position: relative;
+    padding-left: 50%;
+  }
+  
+  #contact .container {
+    grid-auto-flow: column;
+    align-items: center;
+  }
+
+  #contact .text {
+    max-width: 25rem;
+  }
+
+  footer .section {
+    padding: 3.75rem 0;
+  }
+
+  footer .container {
+    grid-auto-flow: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  footer .logo {
+    font-size: 2.25rem;
+  }
+
 }
