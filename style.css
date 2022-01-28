@@ -371,56 +371,6 @@ nav.show div.icon-close {
   color: var(--base-color);
 }
 
-/*======  ALBUNS  ====*/
-
-#albuns {
-  background: white;
-}
-
-#albuns .container {
-  margin-left: 0;
-  margin-right: 0;
-}
-
-#albuns header {
-  text-align: center;
-  margin-left: 1rem;
-  margin-right: 1rem;
-  margin-bottom: 0;
-}
-
-.albuns.grid {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-}
-#albuns table{
-  text-align: center;
-  margin-left: 20rem;
-  position: relative;
-  
-}
-
-#albuns img {
-  width: 10rem;
-  height: 10rem;
-  object-fit: cover;
-  clip-path: circle();
-}
-
-#albuns .albun { 
-  max-width: 250px;
-  padding: 1.5rem;
-}
-.albuns {
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-}
-
-.albuns {
-  padding-left: 3rem;
-  padding-right: 3rem;
-}
-
 footer {
   background: var(--base-color);
 }
@@ -448,6 +398,7 @@ footer .social {
 footer .social a {
   transition: 0.3s;
   display: inline-block;
+  align-items: center;
 }
 
 footer .social a:hover {
