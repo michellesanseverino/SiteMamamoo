@@ -48,13 +48,13 @@ const swiper = new Swiper('.swiper-container', {
 const scrollReveal = ScrollReveal({
   origin: 'top',
   distance: '30px',
-  duration: 700,
+  duration: 800,
   reset: true
 })
 
 const sections = document.querySelectorAll('main section[id]')
 function activateMenuAtCurrentSection() {
-  const checkpoint = window.pageYOffset + (window.innerHeight / 8) * 4
+  const checkpoint = window.pageYOffset + (window.innerHeight / 8) * 3
 
   for (const section of sections) {
     const sectionTop = section.offsetTop
@@ -82,7 +82,7 @@ scrollReveal.reveal(
   #members .cards, #albuns .albun,
   footer .brand, footer .social
   `,
-  { interval: 100 }
+  { interval: 150 }
 )
 
 window.addEventListener('scroll', function () {
