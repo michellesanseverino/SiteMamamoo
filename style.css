@@ -344,6 +344,8 @@ nav.show div.icon-close {
 .cards.grid {
   display: flex;
   flex-wrap: wrap;
+  align-itens: center;
+  
 }
 
 .card {
@@ -355,17 +357,23 @@ nav.show div.icon-close {
 }
 
 .card img {
-  display: block;
+  display: block;  
+  width: 9.75rem;
   margin-bottom: 1.5rem;
+  position: relative;
 }
 
 .card title {
-  font-size: 1.5rem;
+  align-items: center;
+  font-size: 1rem;
   margin-bottom: 0.75rem;
 }
 
 .card i {
-  display: block;
+  display: flexbox;
+
+  flex-direction: row;
+  padding: 0.5rem;
   margin-bottom: 1.5rem;
   font-size: 2rem;
   color: var(--base-color);
@@ -387,6 +395,11 @@ footer .logo {
 
 footer i {
   font-size: 1.5rem;
+  color: var(--text-color-light);
+}
+
+footer .social img {
+  width: 1.5rem;
   color: var(--text-color-light);
 }
 
