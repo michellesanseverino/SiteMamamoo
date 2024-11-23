@@ -1,6 +1,3 @@
-I was unable to retrieve the existing files or README for the repository. However, I can still help draft a README based on the repository description and typical structure. 
-
-Here is a draft README for your repository:
 # Site Mamamoo
 
 Personal project based in the korean girl-group Mamamoo, to practice HTML5, CSS3, and JavaScript.
